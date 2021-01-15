@@ -72,7 +72,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Valloric/YouCompleteMe'
 Bundle 'Tabular'
 Plugin 'apalmer1377/factorus'
-" Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 " Airline
