@@ -15,6 +15,8 @@ sudo snap install scc
 # gaucho: Minimalistic task launcher
 sudo snap install gaucho
 sudo snap install drawio
+# Nat is a complete replacement for the 'ls' command
+sudo snap install natls
 
 # Productivity
 sudo snap install todoist
