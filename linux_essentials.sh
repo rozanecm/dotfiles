@@ -4,6 +4,20 @@ sudo apt install tree
 sudo apt install vim
 sudo apt install curl
 sudo snap install vlc
+sudo snap install spotify
+sudo snap install slack --classic
+sudo snap install insomnia
+sudo snap install insomnia-designer
+# Netron: Visualizer for neural network, deep learning and machine learning models
+sudo snap install netron
+# scc is a very fast & accurate code counter counting lines of code by language.
+sudo snap install scc
+# gaucho: Minimalistic task launcher
+sudo snap install gaucho
+sudo snap install drawio
+
+# Productivity
+sudo snap install todoist
 
 ###########################################
 ############ VIM SECTION ##################
