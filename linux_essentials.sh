@@ -17,9 +17,22 @@ sudo snap install gaucho
 sudo snap install drawio
 # Nat is a complete replacement for the 'ls' command
 sudo snap install natls
+# screen recorder
+sudo apt install kazam
+# Countdown timer and stopwatch in your terminal.
+sudo snap install termdown
+sudo snap install dirsize
 
 # Productivity
 sudo snap install todoist
+sudo snap install telegram-desktop
+
+# Utility
+# Test your internet download speed from terminal.
+sudo snap install fast
+sudo snap install htop
+sudo snap install upnp-router-control
+sudo snap install mediainfo
 
 ###########################################
 ############ VIM SECTION ##################
