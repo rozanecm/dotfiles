@@ -1,15 +1,18 @@
+#!/bin/bash
 # This script contains .... sarasa
+sudo apt-get update -y
+sudo apt-get install git -y
 
-sudo apt install tree
-sudo apt install vim
-sudo apt install curl
+sudo apt install tree -y
+sudo apt install vim -y
+sudo apt install curl -y
 sudo snap install vlc
 sudo snap install spotify
 sudo snap install slack --classic
-sudo snap install insomnia
-sudo snap install insomnia-designer
+# sudo snap install insomnia
+# sudo snap install insomnia-designer
 # Netron: Visualizer for neural network, deep learning and machine learning models
-sudo snap install netron
+# sudo snap install netron
 # scc is a very fast & accurate code counter counting lines of code by language.
 sudo snap install scc
 # gaucho: Minimalistic task launcher
@@ -18,7 +21,7 @@ sudo snap install drawio
 # Nat is a complete replacement for the 'ls' command
 sudo snap install natls
 # screen recorder
-sudo apt install kazam
+sudo apt install kazam -y
 # Countdown timer and stopwatch in your terminal.
 sudo snap install termdown
 sudo snap install dirsize
@@ -49,12 +52,12 @@ cp .vimrc ~/.vimrc
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh && sh ./install.sh && rm install.sh
 
 ###########################################
-#########END VIM SECTION ##################
+######### END VIM SECTION ##################
 ###########################################
 
 # https://linux.die.net/man/1/sox
 # needed for https://gist.github.com/rozanecm/38f2901c592bdffc40726cb0473318cf
-sudo apt-get install sox
+sudo apt-get install sox -y
 
 # optionals
 # sudo apt-get install sl
