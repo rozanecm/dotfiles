@@ -11,6 +11,7 @@ sudo snap install spotify
 sudo snap install slack --classic
 # sudo snap install insomnia
 # sudo snap install insomnia-designer
+sudo snap install postman
 # Netron: Visualizer for neural network, deep learning and machine learning models
 # sudo snap install netron
 # scc is a very fast & accurate code counter counting lines of code by language.
