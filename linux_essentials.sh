@@ -65,4 +65,4 @@ sudo apt-get install sox -y
 # sudo apt-get install cmatrix
 
 # My GIT commit cmd
-git clone https://gist.github.com/1cb5f2065456be9660918ebbe5299d1f.git && mv 1cb5f2065456be9660918ebbe5299d1f/gc /usr/local/bin
+git clone https://gist.github.com/1cb5f2065456be9660918ebbe5299d1f.git && mv 1cb5f2065456be9660918ebbe5299d1f/gc /usr/local/bin && rm -rf 1cb5f2065456be9660918ebbe5299d1f
