@@ -6,41 +6,6 @@ set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 
-" #### NeoBundle given .vimrc ####
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-"
-" Table mode plugin:
-NeoBundle 'dhruvasagar/vim-table-mode'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-
-" #### End of NeoBundle given .vimrc ####
 "
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -69,8 +34,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " MOJI PLUGINS
-Plugin 'Valloric/YouCompleteMe'
-Bundle 'Tabular'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'godlygeek/tabular'
 Plugin 'apalmer1377/factorus'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'airblade/vim-gitgutter'
@@ -80,6 +45,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Snippets
 Plugin 'honza/vim-snippets'
+Plugin 'luochen1990/rainbow'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -110,7 +77,7 @@ set number
 " You complete me config file
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
-" How can I open a NERDTree automatically when vim starts up?
-autocmd vimenter * NERDTree
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
